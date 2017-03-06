@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100"
+    tools:context="cl.karangop.shoppingfood.views.dish.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/llDay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/bg_white_underlined_orange">
+
+        <TextView
+            android:id="@+id/txtTodayIs"
+            android:text="@string/today"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/txtDay"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="90">
+
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|top"
+            android:id="@+id/dishListFragment"
+            android:name="cl.karangop.shoppingfood.views.dish.DishListFragment"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="10"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btnJumpStep"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/saltar_paso"
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+            android:padding="10dp" />
+
+      <!--  <Button
+            android:id="@+id/btnNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/siguiente_paso"
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+            android:padding="10dp" />-->
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

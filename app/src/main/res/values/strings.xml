@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Shopping Food</string>
+    <string name="today">Platos para hoy </string>
+
+    <string name="saltar_paso">Saltar Paso</string>
+    <string name="siguiente_paso">Siguiente</string>
+
+    <!--Array Dishes-->
+    <!--  <string-array name="dishes">
+        <item>Tortilla de porotos verdes</item>
+        <item>Tortilla de brocoli con papas mayo</item>
+        <item>zapallo italiano relleno con papas doradas</item>
+        <item>Tortilla de acelga con puré</item>
+    </string-array>-->
+
+
+    <string name="total">Total: $ </string>
+    <string name="Ingrese_dato">Ingrese aquí</string>
+    <string name="nameDetail">Nombre:</string>
+    <string name="priceDetail">Precio ($):</string>
+    <string name="save">Guardar</string>
+
+</resources>
